@@ -5,9 +5,9 @@ var a = 8;
 console.log(a); // 8;
 // next one;
 console.log(b); // undefined;
-var b = 5;
+var b = 5; // yo b ko value kai kaam lagena kinw kih varaible antim ma pass vako cha.
 
-// But tyai case function ma pani cha. a ra b ko value last ma pass
+// But tyai case function ma pani cha. char ko value last ma pass
 // vako cha tyo sum() call vaye sake pachi paramater ma chai value pass vako cha.
 // Bichako part chai console.log() chia kasari skip hunca?
 function sum(char) {
