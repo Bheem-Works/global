@@ -1,6 +1,8 @@
-// Here will be the cs class Home works. 
+// Here will be the cs(computer science) class Home works. 
+
 // find the even by using the loops in the arrays; 
 // print the all value of the array by using the loops; 
+
 #include <stdio.h> 
 int name_array();
 int evenFunction();
@@ -14,14 +16,14 @@ int evenFunction() {
   int even_arr [4] = {1,2,3,4};
   for(int i = 0; i <=4; i++) {
     if(i % 2 == 0){
-      printf("%d",i);
+      printf("%d\n",i);
     }
   }
 }
 
 int name_array() {
-  int name[10][5] = {"A","B","C","D"}; // respected dai btw haha. 
+  char *name[] = {"A","B","C","D"}; // used the * infinity pointers. And used the char for the strings;  
   for(int i = 0; i < 5; i++) {
-    printf("%s",name[i]);
+    printf("%s\n",name[i]);
   }
 }
