@@ -1,5 +1,5 @@
 #include <iostream>
- 
+
 int main()
 {
     // simple if-statement with an else clause
