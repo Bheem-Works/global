@@ -4,7 +4,7 @@
     int main(){
         std::cout << "This is a functions values through the arguements \n";
         foo(5, 10); // calling the function with arguments
-        return 0;4
+        return 0;
     }
     int boo(){
         int a = 5, b = 10;
