@@ -22,11 +22,4 @@ int foo(int i){
 
 }
 
- int fac(int j){
-    if(j >= 1){
-        return j * fac(j-1);
-        printf("execute tah hu nah vai");
-    }else {
-        return 1;
-    }
-}
+
