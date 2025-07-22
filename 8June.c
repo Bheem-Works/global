@@ -3,12 +3,22 @@
 // find the even by using the loops in the arrays; 
 // print the all value of the array by using the loops; 
 
-#include <stdio.h> 
+#include <stdio.h>
+#include <string.h>
 int name_array();
 int evenFunction();
+int college();
+
 int main () {
-  evenFunction();
-  name_array();
+  college();
+  return 0;
+}
+
+int college () {
+  char isNight[20] = "20July";
+  if(strcmp(isNight, "20July") == 0){
+    printf("Tommrow is no college");
+  }
   return 0;
 }
 
