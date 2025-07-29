@@ -9,12 +9,12 @@ int main(){
 
 int accending(){
     // This will be the accending oder 
-    int oder[4] = {4,5,1,4};
+    int oder[4] = {3,2,1,0};
     int storeOder;
     for(int i = 0; i < 4; i++){
         for(int j = i + 1; j < 4; j++){
             if(oder[i] > oder[j]){
-                storeOder = oder[j]; // it will direcltly store to the store array; no use of it
+                storeOder = oder[i]; // it will direcltly store to the store array; no use of it
                 oder[i] = oder[j]; // store to the i it may be used; 
                 oder[j] = storeOder; // store it to the j and it also may used; 
             }
