@@ -10,8 +10,7 @@ for (let i = 0; i < numbers.length; i++) {
 
     console.log(`numbers ${numbers[i]}`); // 1 -> 2 -> 3 -> 50;
     console.log(` if max : ${max}`); //  1 -> 2 -> 3; // += before assigning to the down below code; 
-
-    max = numbers[i];
+    max = numbers[i]; // here max value is getting updated; 
     console.log(`after if max: ${max}`); // 2 -> 1 = 1; 
   }
 
@@ -21,9 +20,3 @@ for (let i = 0; i < numbers.length; i++) {
 console.log("largestNumber", max); // largest number = 50; 
 
 console.log("Another one ======== \n \n ")
-
-let twevel = 12;
-let thirteen = 13;
-if (`${twevel} < ${thirteen}`) {
-  console.log(`${thirteen} is greater the the ${twevel}`);
-}

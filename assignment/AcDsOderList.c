@@ -10,9 +10,18 @@ int main(){
 int accending(){
     // This will be the accending oder 
     printf("acessing oder :");
-    
+    int oder[4] = {1,2,3,4};
+    int storeOder;
+    for(int i = 0; i < 4; i++){
+        for(int j = i+1; j < i; j++){
+            if(i < j){
+                storeOder = j;
+            }
+        }
+    }
     return 0;
 }
+
 // int list(){
 //     // created a structure to store the different data types value; 
 //     struct {
