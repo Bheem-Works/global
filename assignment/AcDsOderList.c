@@ -8,6 +8,16 @@ int main(){
 }
 
 int accending(){
+    // creating the structure; 
+    struct student{
+        int name[30];
+        int id;
+        int rank;
+    }; 
+    // deatail about the structure; 
+    struct student bidarthi; 
+    bidarthi.id = 90; 
+    
     // This will be the accending oder 
     int oder[4] = {3,2,1,0};
     int storeOder;
