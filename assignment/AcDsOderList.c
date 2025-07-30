@@ -1,23 +1,29 @@
+// Wap to enter n numbers of students (name,age,marks) and displays them in ascending and descending order according to age. 
 #include <stdio.h>
 // int list(); 
 int accending();
 
 int main(){
-    // list();
     accending();
 }
 
 int accending(){
     // creating the structure; 
-    struct student{
+    struct{
         int name[30];
         int id;
         int rank;
-    }; 
+    } student [3]; 
     // deatail about the structure; 
-    struct student bidarthi; 
-    bidarthi.id = 90; 
-    
+    struct student; 
+    strcpy(student[0].name, "vim"); 
+    student[0].id = 90; 
+    student[0].rank = 2;     
+
+    // for loops for the structure; 
+    for(int i = 0; i < 2; i++){
+        printf("studentRank %d",student[i].rank);
+    }
     // This will be the accending oder 
     int oder[4] = {3,2,1,0};
     int storeOder;
@@ -36,24 +42,3 @@ int accending(){
     }
     return 0;
 }
-
-// int list(){
-//     // created a structure to store the different data types value; 
-//     struct {
-//         char name [10];
-//         int age; 
-//         int id;
-//     }student[3]; 
-
-//     // Loops for enter the input to the structure variables; 
-//     for(int i = 0; i < 3; i++){
-//         printf("Enter the asked value \n");
-//         // Name ---------; 
-//         printf("Your name:");
-//         scanf("%s &name \n"); 
-
-//         // age 
-//         printf("enter your age");
-//         scanf("%d &age\n"); 
-//     }
-// }
