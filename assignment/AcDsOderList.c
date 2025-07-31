@@ -1,48 +1,50 @@
 // Wap to enter n numbers of students (name,age,marks) and displays them in ascending and descending order according to age. 
+
 #include <stdio.h>
-// int list(); 
-int accending();
-
-int main(){
-    accending();
-}
-
-int accending(){
-    // creating the structure; 
-    struct{
-        char name[30];
-        int id;
+int studentBio();
+struct student{
+        char name[10];
+        int id; 
         int rank;
-    } student [3]; 
-    // deatail about the structure; 
-    strcpy(student[0].name, "vim"); 
-    student[0].id = 90; 
-    student[0].rank = 2;     
+    };
+int main() {
+    studentBio();   
+    return 0; 
+}
+int studentBio(){
+    int n; 
+    printf("Enter the numbers: ");
+    scanf("%d",&n);
 
-    // seconds value; 
-    strcpy(student[1].name, "thupa");
-    student[1].id = 0; 
-    
-    // for loops for the structure; 
-    // for(int i = 0; i < 2; i++){
-    //     printf("studentRank %d",student[i].rank);
-    //     printf("studentId %d",student[i].rank);
-    // }
+    struct student studentInfo[n];
 
-    // explaining the accending oders;
-    int storeOder;
-    for(int i = 0; i < 4; i++){
-        for(int j = i + 1; j < 4; j++){
-            if(student[i] > student[j]){
-                storeOder = student[i]; 
-                student[i] = student[j];  
-                student[j] = storeOder; 
-            }
+    // Student info input; 
+    for(int i = 0; i < n; i++){
+        printf("\n student : %d \n ",i + 1);
+        printf("Name:");
+        scanf("%s",&studentInfo[i].name);
+        printf("id:");
+        scanf("%d",&studentInfo[i].id);
+        printf("rank:");
+        scanf("%d",&studentInfo[i].rank);
+    }
+
+    // bubble sorting; 
+   for(int i = 0; i < n; i++){
+    for(int j = i + 1; j < n; j++){
+        struct student temp;
+        if(studentInfo[i].id > studentInfo[j].id){
+            temp = studentInfo[i];
+            studentInfo[i] = studentInfo[j];
+            studentInfo[j] = temp; 
         }
     }
-    // print; 
-    for(int i = 0; i < 4; i++){
-        printf("%d",student[i]);
+   }
+
+    // acessing the results; 
+    printf("\n Acessinding the oder by age:\n");
+    for(int i = 0; i < n; i++){
+        printf("Nane: %s - rank: %d, id:%d\n",studentInfo[i].name,studentInfo[i].rank,studentInfo[i].id);
     }
-    return 0;
-}
+    return 0; 
+};
