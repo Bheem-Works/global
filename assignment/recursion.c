@@ -2,7 +2,6 @@
 // wap for find out the factorial numbers; 
 // Recursion function 
 int foo(int i);
- int fac(int j);
 int main() {
     // Your code here
     int userInput; 
@@ -22,4 +21,7 @@ int foo(int i){
 
 }
 
+// 2 factorial 
+// 2,4,8,10,20
 
+// fibonacii
