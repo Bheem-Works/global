@@ -7,12 +7,12 @@ int recursion(int i);
 
 int fabionacci(int f);
 int main(){
-    int term = 10;
+    int term = 4;
     cout << "fabionacci using the recursion and the if else";
     for(int i = 0; i < term; i++){
         cout << fabionacci(i) << "\n ";
     }
-    return 0; 
+    return 0;   
 };
 
 int fabionacci(int f){

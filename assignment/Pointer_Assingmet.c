@@ -33,10 +33,11 @@ int simple_Intrest(){
 
 // Questions Three -> Find the factorail numbers by using the pointers; 
 int fraction(n){
-  int fact;
-  for(int i = 0; i < n; i++){
+  int fact = 4; 
+  for(int i = 1; i < n; i++){
     fact *= i; 
   }
+  printf("Your factorial number is %d",fact);
   return fact;
     printf("Factorial numbes : %d\n",fact);
 }
@@ -50,7 +51,6 @@ int main(){
 
     printf("\n \n");
     int n; 
-    printf("Enter the factorial number:\n");
-    scanf("%d",&n);
+    n = 4; 
     fraction(n);
 }
