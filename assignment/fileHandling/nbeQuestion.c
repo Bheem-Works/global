@@ -13,12 +13,12 @@ int main()
     fprintf(file, "%s %s %.2f\n", name, post, salaray);
     fclose(file);
 
-    // for record the file;
+    // for read the file;
     FILE *fp;
     fp = fopen("document.txt", "r");
     printf("Name\tPost\tSalary\n");
 
-    while (fscanf(fp, "%s %s %f", name, post, &salaray) == 3)
+    while (fscanf(fp, "%s %s %f", name, post, &salaray) != EOF)
     {
         printf("%s\t%s\t%.2f\n", name, post, salaray);
     }

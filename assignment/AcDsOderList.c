@@ -32,7 +32,7 @@ int studentBio(){
     // bubble sorting; 
    for(int i = 0; i < n; i++){
     for(int j = i + 1; j < n; j++){
-        struct student temp;
+        struct student temp; // maked the new varaible for store;
         if(studentInfo[i].id > studentInfo[j].id){
             temp = studentInfo[i];
             studentInfo[i] = studentInfo[j];
@@ -42,7 +42,7 @@ int studentBio(){
    }
 
     // acessing the results; 
-    printf("\n Acessinding the oder by age:\n");
+    printf("\n Acessinding the oder by id:\n");
     for(int i = 0; i < n; i++){
         printf("Nane: %s - rank: %d, id:%d\n",studentInfo[i].name,studentInfo[i].rank,studentInfo[i].id);
     }

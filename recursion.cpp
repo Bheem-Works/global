@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 // Wap a recursion.
+int maximum(int i);
 int recursion(int i);
 // write the fabionacci sequence in the C++ by using the recursion; 
 // fabionacci sequence is a sequence in which each number is the preceding sum of two each numbers; 
@@ -30,4 +31,10 @@ int recursion(int i){
         recursion(i-1);
         printf("run \n \n");
     }
+}
+
+int maximum(){
+  int numArr[10] = {1,2,3,4,5};
+  cout << numArr[4];
+  return 0;
 }
