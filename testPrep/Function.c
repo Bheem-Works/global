@@ -12,9 +12,10 @@ int main() {
 }
 
 int factorial(int n){
+    int fact = 1;
     for(int i = 1; i <= n ; i++){
-        int fact; 
-        fact = n * i;
-        printf("%d",fact);
+        fact *= i;
     }
+    printf("%d",fact);
+    return fact;
 }
