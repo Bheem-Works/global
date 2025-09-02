@@ -12,3 +12,17 @@ var oa = {
 
 foo(oa);
 console.log(oa.a);
+
+function findMax(num) {
+  let max = num[0];
+  for (let i = 0; i < num.length; i++) {
+    for (let j = i + 1; j < num.length; j++) {
+      if (num[j] < max) {
+        max = num[j];
+      }
+    }
+  }
+  return max;
+}
+
+console.log(findMax([5, 3, 4, 7])); // 7

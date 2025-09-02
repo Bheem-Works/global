@@ -14,4 +14,4 @@ The question;
    12
    1
 9. Write a program to know if a number is palindrome or not.
-10. Write a program to find sume of 1,2,3,4....100;
+10. Write a program to find sume of 1,2,3,4....10
